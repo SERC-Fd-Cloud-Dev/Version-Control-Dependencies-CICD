@@ -1,8 +1,10 @@
-# Development workflow with the Movie Guessing Game
+# Version control, dependency management and introductory CI
 
-A small offline command-line game for practising Git collaboration, Python
-dependencies, and introductory CI. This is a new example game, not a copy of the
-program used in an earlier Python lesson.
+This lesson focuses on Git collaboration, Python dependency management, and
+simple automated CI with GitHub Actions. A small offline movie guessing game
+provides the practical scenario; the focus is the development workflow, not
+building a game. The example is new, not a copy of the program used in an earlier
+Python lesson.
 
 ## Prerequisites
 
