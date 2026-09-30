@@ -56,7 +56,8 @@ def play_round(guess_limit: int = MAX_GUESSES) -> None:
 
         attempts_left = remaining_attempts(guesses_used, guess_limit)
         if attempts_left:
-            print(f"Not quite. You have {attempts_left} guesses remaining.")
+            guess_word = "guess" if attempts_left == 1 else "guesses"
+            print(f"Not quite. You have {attempts_left} {guess_word} remaining.")
         else:
             print(f"No guesses left. The movie was {movie.title}.")
 
