@@ -65,6 +65,11 @@ ruff check .
 pytest
 ```
 
+Ruff is a fast Python linter that checks code for common issues and style
+problems. Pytest runs the supplied automated checks to verify existing game
+behaviour. In this lesson, run the tests but do not write new ones; test design
+and pytest will be covered in a later week.
+
 The game chooses one record at random, gives a first-letter/word-count clue and
 a release-year hint, and allows four valid guesses. Empty input does not use a
 guess; correct guesses ignore case and repeated whitespace. There is one round,
