@@ -97,7 +97,8 @@ Independent homework: [Genre selection](exercises/homework-genre-selection.md).
 ## Project layout
 
 ```text
-movie_game/                 game rules, CLI and movie data
+movie_game/                 game rules and CLI
+movie_game/movies.json      editable movie catalogue
 tests/                      five supplied starter checks
 exercises/                  student briefs, workflow template and fixture setup
 requirements.txt            runtime packages (empty until Exercise 4)
