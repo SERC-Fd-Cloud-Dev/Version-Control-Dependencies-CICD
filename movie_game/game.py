@@ -32,7 +32,7 @@ def remaining_attempts(guesses_used: int, limit: int = MAX_GUESSES) -> int:
     return limit - guesses_used
 
 
-def play_round() -> None:
+def play_round(guess_limit: int = MAX_GUESSES) -> None:
     """Run one complete round of the game in the terminal."""
     movie = select_movie()
     word_count = len(movie.title.split())
@@ -40,10 +40,10 @@ def play_round() -> None:
         f"The title starts with {movie.title[0]} and has {word_count} "
         f"{'word' if word_count == 1 else 'words'}. {build_hint(movie)}"
     )
-    print(f"You have {MAX_GUESSES} guesses.")
+    print(f"You have {guess_limit} guesses.")
 
     guesses_used = 0
-    while guesses_used < MAX_GUESSES:
+    while guesses_used < guess_limit:
         guess = input("Your guess: ")
         if not normalize_guess(guess):
             print("Please enter a movie title; an empty guess does not count.")
@@ -54,7 +54,7 @@ def play_round() -> None:
             print("Correct! Nice guessing.")
             return
 
-        attempts_left = remaining_attempts(guesses_used)
+        attempts_left = remaining_attempts(guesses_used, guess_limit)
         if attempts_left:
             print(f"Not quite. You have {attempts_left} guesses remaining.")
         else:

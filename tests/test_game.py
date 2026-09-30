@@ -1,4 +1,4 @@
-from movie_game.data import MOVIES, Movie
+from movie_game.data import Movie
 from movie_game.game import (
     MAX_GUESSES,
     build_hint,
