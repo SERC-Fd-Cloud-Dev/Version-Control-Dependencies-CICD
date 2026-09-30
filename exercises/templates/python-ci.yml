@@ -1,0 +1,32 @@
+name: Python quality checks
+
+# TODO: Review why both push and pull_request should run this workflow.
+on:
+  push:
+  pull_request:
+
+# TODO: Keep the workflow token limited to what checkout and tests need.
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the triggering commit
+        uses: actions/checkout@v7
+
+      - name: Set up the documented Python version
+        uses: actions/setup-python@v7
+        with:
+          # TODO: Keep this aligned with the Python version in README.md.
+          python-version: "3.12"
+
+      - name: Install project and development dependencies
+        run: python -m pip install -r requirements-dev.txt
+
+      - name: Check style
+        run: ruff check .
+
+      - name: Run supplied tests
+        run: pytest

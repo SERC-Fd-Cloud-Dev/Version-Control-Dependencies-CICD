@@ -1,0 +1,86 @@
+[
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "genre": "Science fiction",
+    "director": "Lana and Lilly Wachowski"
+  },
+  {
+    "title": "Arrival",
+    "year": 2016,
+    "genre": "Science fiction",
+    "director": "Denis Villeneuve"
+  },
+  {
+    "title": "Back to the Future",
+    "year": 1985,
+    "genre": "Science fiction",
+    "director": "Robert Zemeckis"
+  },
+  {
+    "title": "Jaws",
+    "year": 1975,
+    "genre": "Thriller",
+    "director": "Steven Spielberg"
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "genre": "Thriller",
+    "director": "Jonathan Demme"
+  },
+  {
+    "title": "Groundhog Day",
+    "year": 1993,
+    "genre": "Comedy",
+    "director": "Harold Ramis"
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "genre": "Comedy",
+    "director": "Wes Anderson"
+  },
+  {
+    "title": "Toy Story",
+    "year": 1995,
+    "genre": "Adventure",
+    "director": "John Lasseter"
+  },
+  {
+    "title": "Raiders of the Lost Ark",
+    "year": 1981,
+    "genre": "Adventure",
+    "director": "Steven Spielberg"
+  },
+  {
+    "title": "Spirited Away",
+    "year": 2001,
+    "genre": "Adventure",
+    "director": "Hayao Miyazaki"
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "genre": "Drama",
+    "director": "Frank Darabont"
+  },
+  {
+    "title": "Forrest Gump",
+    "year": 1994,
+    "genre": "Drama",
+    "director": "Robert Zemeckis"
+  },
+  {
+    "title": "The Lion King",
+    "year": 1994,
+    "genre": "Animation",
+    "director": "Roger Allers and Rob Minkoff"
+  },
+  {
+    "title": "Finding Nemo",
+    "year": 2003,
+    "genre": "Animation",
+    "director": "Andrew Stanton"
+  }
+]
