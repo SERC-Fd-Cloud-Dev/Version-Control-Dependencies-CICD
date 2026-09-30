@@ -29,10 +29,19 @@ directory: inspect it, then remove **only**
 2. Combine both requirements into one useful hint: include the release year,
    director and genre. Remove every conflict marker while retaining a valid
    Python return statement.
-3. Run the check in the fixture README (or run `python hint_demo.py`) and make
-   sure the output contains all three pieces of information.
-4. Stage the resolved file and finish the merge with a merge commit. Inspect
-   status and graph history to verify both histories are present.
+3. From the class repository root, enter the fixture with
+   `cd practice/movie-hint-conflict`. Run `python hint_demo.py` and make sure the
+   output contains all three pieces of information.
+4. Still in the fixture, stage and finish the merge:
+
+   ```sh
+   git add hint_demo.py
+   git commit -m "Combine hint details"
+   git status
+   git log --oneline --graph --all
+   ```
+
+   Confirm the tree is clean and the merge history contains both branches.
 
 ## Evidence and self-check
 

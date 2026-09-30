@@ -72,12 +72,11 @@ Example interaction (the randomly selected title is intentionally not shown
 here):
 
 ```text
-The title starts with T and has two words. Hint: released in 1999.
+The title starts with [first letter] and has [number] words.
+Hint: released in [year].
 You have 4 guesses.
-Your guess: jaws
+Your guess: [a non-matching title]
 Not quite. You have 3 guesses remaining.
-Your guess:  the   MATRIX
-Correct! Nice guessing.
 ```
 
 ## Exercises

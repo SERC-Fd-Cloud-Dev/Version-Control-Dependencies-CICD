@@ -15,8 +15,13 @@ Begin after your difficulty PR has been merged into your own `main`. Update
 1. Choose one small terminal display improvement using [Rich](https://rich.readthedocs.io/),
    such as colouring the game title or the success/failure outcome. Keep the
    game a local command-line program; do not redesign its interaction.
-2. Install Rich into your active `.venv`. Add an appropriate runtime constraint
-   to `requirements.txt` (for example, `rich>=13.9,<15`) so a fresh install can
+2. Install Rich into your active `.venv`:
+
+   ```sh
+   python -m pip install "rich>=13.9,<15"
+   ```
+
+   Add the same constraint to `requirements.txt` so a fresh install can
    reproduce it. `requirements-dev.txt` already includes `requirements.txt`,
    Ruff and pytest.
 3. Check `.gitignore`: `.venv`, Python caches and tool caches must not appear in
